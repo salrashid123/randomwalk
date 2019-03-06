@@ -1,0 +1,15 @@
+[Unit]
+Description=Opencensus Agent
+After=network-online.target
+
+[Service]
+Type=simple
+User=ocagent
+Group=ocagent
+ExecStart=/opt/opencensus-agent/bin/ocagent -c /opt/opencensus-agent/conf/oca.yaml
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=opencensusagent
+
+[Install]
+WantedBy=multi-user.target

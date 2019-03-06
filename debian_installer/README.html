@@ -1,0 +1,576 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/srashid/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.3.11/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+ 
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="creating-a-simple-debian-installer">Creating a simple Debian installer</h1>
+
+<p>I usually cover topics related to Google Cloud but from time to time some random tasks that took me a fair amount to figure out.   In the spirt of the latter, i found myself creating my very first packaged installer for linux.  It wasn&apos;t done for any particular customer-related critical issue but because a collegue of mine asked about how to easily install <code>OpenCensus</code> agent on a debian system and manage its service lifecycle (and the prospect of fine beer &#x1F603;.  That started me down the 8+ hour path in writing a package installer and distribution site from scratch and i thought i&apos;d document a simple how-to as sort of a personal log.</p>
+<p>Ofcourse its nothing remarkable or novel or specifici to GCP but here it is.  This article:</p>
+<ul>
+<li>creates a debian <code>.deb</code> installer for <a href="https://opencensus.io/agent">OpenCensus Agent</a></li>
+<li>creates a package distribution site (i.,e apt-repository; just like the professionals!)</li>
+</ul>
+<p>The references below cover both steps i ran on my laptop to generate the <code>.deb</code> and on Google Cloud Platform VMs to host the deb file and one other VM to consume (install it via apt)</p>
+<blockquote>
+<blockquote>
+<p>Note:  big disclaimer:  this is the first installer i&apos;ve written...If you plan to use this for any real applicaiton, please read the official documentation carefully...this tutorial will just help you get started.</p>
+</blockquote>
+</blockquote>
+<h2 class="mume-header" id="references">References</h2>
+
+<ul>
+<li><a href="https://wiki.debian.org/DebianInstaller/Build">Debian-Installer: Building the installer yourself</a></li>
+<li><a href="https://www.debian.org/doc/manuals/maint-guide/dreq.en.html">Required files under the debian directory</a></li>
+<li><a href="http://blog.jonliv.es/blog/2011/04/26/creating-your-own-signed-apt-repository-and-debian-packages/">Creating your own Signed APT Repository and Debian Packages</a></li>
+<li><a href="https://www.debian.org/doc/manuals/packaging-tutorial/packaging-tutorial.en.pdf">Debian Packaging Tutorial</a></li>
+</ul>
+<h2 class="mume-header" id="creating-a-deb-file">Creating a .deb file</h2>
+
+<p>So what will out installer do:</p>
+<ul>
+<li>package the opencensus agent.  The agent is already provided as a <a href="https://github.com/census-instrumentation/opencensus-service/releases">platform binary</a> so this article does not compile from source</li>
+<li>create user/group that the agent will run as <code>oc-agent/oc-agent</code>.</li>
+<li>install the agent and cofig file under <code>/opt/opencensus-agent/*</code></li>
+<li>install and configure <code>systemd</code> such that you can start/stop the agent easily.</li>
+</ul>
+<p>Lets get started.  As mentioned in the introduction, i&apos;m running all the steps using docker. Everything: the build environment, the repository server <em>and</em> the client system that will install the <code>.deb</code> file.</p>
+<ol>
+<li>Setup some libraries we will need later</li>
+</ol>
+<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token function">apt-get</span> update
+<span class="token function">apt-get</span> <span class="token function">install</span> debhelper dh-systemd dh-make reprepro gnupg2 vim <span class="token function">wget</span> nginx lsb-release -y
+</pre><ol start="2">
+<li>Generate a GPG key or use the one provided here (note, the password is <code>opencensus0!</code>)</li>
+</ol>
+<pre data-role="codeBlock" data-info="bash" class="language-bash">gpg --import stage/certs/oc_private.key 
+
+  gpg: /root/.gnupg/trustdb.gpg: trustdb created
+  gpg: key 0C74009E141D7911: public key <span class="token string">&quot;OpenCensus (https://opencensus.io) &lt;census-developers@googlegroups.com&gt;&quot;</span> imported
+  gpg: key 0C74009E141D7911: secret key imported
+  gpg: Total number processed: 1
+  gpg:               imported: 1
+  gpg:       secret keys read: 1
+  gpg:   secret keys imported: 1
+
+gpg --import stage/certs/oc_public.key  
+  gpg: key 0C74009E141D7911: <span class="token string">&quot;OpenCensus (https://opencensus.io) &lt;census-developers@googlegroups.com&gt;&quot;</span> not changed
+  gpg: Total number processed: 1
+  gpg:              unchanged: 1
+</pre><p>(or create your own key <code>gpg --full-generate-key</code>)</p>
+<ul>
+<li>pick sign only (option 4);</li>
+<li>Username: <code>Opencensus</code></li>
+<li>email: <code>census-developers@googlegroups.com</code></li>
+<li>pick any password</li>
+</ul>
+<p>Now note down the <code>keyID</code>.  In the example below, its <code>141D7911</code></p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>gpg --keyid-format SHORT --list-keys
+  pub   rsa4096/141D7911 2019-03-01 [SC]
+        9A70363996C3EE279ABBAF2E0C74009E141D7911
+  uid         [ unknown] OpenCensus (https://opencensus.io) &lt;census-developers@googlegroups.com&gt;
+</code></pre><ol start="3">
+<li>Create debian installer root folder</li>
+</ol>
+<p>Create the folder to house our configuration files.  I&apos;m creating <code>opencensusagent</code> version <code>0.1.2</code> so i named the directory<br>
+exactly in that format with a hyphen (the folder structure/name convention is important).</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token function">mkdir</span> opencensusagent-0.1.2/
+<span class="token function">cd</span> opencensusagent-0.1.2/
+<span class="token function">export</span> USER<span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">whoami</span><span class="token variable">`</span></span>
+</pre><ol start="4">
+<li>Use <code>dh_make</code> to to prefill the installation files</li>
+</ol>
+<p><a href="https://manpages.debian.org/jessie/dh-make/dh_make.8.en.html">dh_make</a> sets up the baseline files we will use.</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>dh_make  --createorig -e census-developers@googlegroups.com -s -y
+</code></pre><p>This will create the <a href="https://www.debian.org/doc/manuals/maint-guide/dreq.en.html">Required files under the debian directory</a></p>
+<ol start="5">
+<li>Configure installer</li>
+</ol>
+<p>The link and references above covers the various files and how to set them up.  If you just want the quick+dirty, preconfigured files, you can copy the ones spcific to this installer from here:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>cp -R ../stage/debian/* debian/
+</code></pre><p>The noteworthy files that we edited are:</p>
+<ul>
+<li><code>debian/control</code>:  describes what this repo does</li>
+<li><code>debian/compat</code></li>
+<li><code>debian/files</code></li>
+<li><code>debain/opencensusagent-install</code>: where to copy the installer files (in our case from <code>debian/src/opt/opencensus-agent/*</code> to <code>/opt/</code>)</li>
+<li><code>debian/opencensusagent.service</code>: <code>systemd</code> configuration</li>
+<li><code>debian/preinst</code>: preinstallation tasks to setup the user/group, etc</li>
+<li><code>debian/postinst</code>: post installation tasks</li>
+<li><code>debian/postrm</code>: remove the user/group and directories after the package is removed</li>
+<li><code>debian/rules</code>: this is an important file:  this describes that we will install systemd and any overrides to systemd or installation to apply.</li>
+<li><code>debian/source/include-binaries</code>:  the target binaries we need to package up (in our case, the opencensus binary and its config file)</li>
+</ul>
+<p>and the actual binaries we will install (remember, we&apos;re not compiling with this deb file!)</p>
+<ul>
+<li><code>debian/src/opt/opencensus-agent/bin/ocagent</code></li>
+<li><code>debian/src/opt/opencensus-agent/conf/oca.yaml</code></li>
+</ul>
+<ol start="6">
+<li>Populate the opencensus binary</li>
+</ol>
+<p>THis is done because i didn&apos;t include the agent in this git repo!</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token function">wget</span> https://github.com/census-instrumentation/opencensus-service/releases/download/0.1.3/ocagent_linux \
+  -O debian/src/opt/opencensus-agent/bin/ocagent
+</pre><ol start="7">
+<li>Build .deb file</li>
+</ol>
+<p>Now we&apos;re finally ready to build:</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash">dpkg-buildpackage -kcensus-developers@googlegroups.com
+</pre><p>(remember, the password is <code>opencensus01</code>)</p>
+<p>This will create the <code>.deb</code> candidate in a directory above the current (<code>../opencensusagent_0.1.2-1_all.deb</code>)</p>
+<ol start="8">
+<li>Test .deb file candidate</li>
+</ol>
+<p>To test, we&apos;ll be setting up a GCP VM (so..yeah, i&apos;m assuming you have access; otherwise, pick a debian system somewhere)</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token function">cd</span>  <span class="token punctuation">..</span>/
+gcloud compute instances create oc-client1 --zone<span class="token operator">=</span>us-central1-a
+gcloud compute <span class="token function">scp</span> opencensusagent_0.1.2-1_all.deb oc-client1:/tmp/
+gcloud compute <span class="token function">ssh</span> oc-client1
+</pre><ol start="8">
+<li>Install <code>deb</code></li>
+</ol>
+<p>SSH to the VM</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>gcloud compute ssh oc-client1 --zone=us-central1-a
+sudo su -
+cd /tmp/
+
+dpkg -i opencensusagent_0.1.2-1_all.deb 
+    Selecting previously unselected package opencensusagent.
+    (Reading database ... 34432 files and directories currently installed.)
+    Preparing to unpack opencensusagent_0.1.2-1_all.deb ...
+    Adding system user `ocagent&apos; (UID 108) ...
+    Adding new group `ocagent&apos; (GID 112) ...
+    Adding new user `ocagent&apos; (UID 108) with group `ocagent&apos; ...
+    Not creating home directory `/home/ocagent&apos;.
+    Unpacking opencensusagent (0.1.2-1) ...
+    Setting up opencensusagent (0.1.2-1) ...
+    Created symlink /etc/systemd/system/multi-user.target.wants/opencensusagent.service &#x2192; /lib/systemd/system/opencensusagent.service.
+    Processing triggers for systemd (232-25+deb9u8) ...
+</code></pre><ol start="9">
+<li>Verify the <code>.deb</code></li>
+</ol>
+<pre data-role="codeBlock" data-info="bash" class="language-bash">$ <span class="token function">service</span> opencensusagent start
+
+$ <span class="token function">service</span> opencensusagent status
+  &#x25CF; opencensusagent.service - Opencensus Agent
+    Loaded: loaded <span class="token punctuation">(</span>/lib/systemd/system/opencensusagent.service<span class="token punctuation">;</span> enabled<span class="token punctuation">;</span> vendor preset: enabled<span class="token punctuation">)</span>
+    Active: active <span class="token punctuation">(</span>running<span class="token punctuation">)</span> since Wed 2019-03-06 01:30:37 UTC<span class="token punctuation">;</span> 1s ago
+  Main PID: 894 <span class="token punctuation">(</span>ocagent<span class="token punctuation">)</span>
+      Tasks: 7 <span class="token punctuation">(</span>limit: 4915<span class="token punctuation">)</span>
+    CGroup: /system.slice/opencensusagent.service
+            &#x2514;&#x2500;894 /opt/opencensus-agent/bin/ocagent -c /opt/opencensus-agent/conf/oca.yaml
+
+  Mar 06 01:30:37 oc-client1 systemd<span class="token punctuation">[</span>1<span class="token punctuation">]</span>: Started Opencensus Agent.
+  Mar 06 01:30:38 oc-client1 opencensusagent<span class="token punctuation">[</span>894<span class="token punctuation">]</span>: 2019/03/06 01:30:38 Running OpenCensus Trace and Metrics receivers as a gRPC <span class="token function">service</span> at <span class="token string">&quot;localhost:55678&quot;</span>
+  Mar 06 01:30:38 oc-client1 opencensusagent<span class="token punctuation">[</span>894<span class="token punctuation">]</span>: 2019/03/06 01:30:38 Running zPages at <span class="token string">&quot;:55679&quot;</span>
+
+
+$ <span class="token function">ps</span> -ef <span class="token operator">|</span> <span class="token function">grep</span> ocagent
+    root      18473      1  0 01:01 pts/0    00:00:00 /opt/opencensus-agent/bin/ocagent -c /opt/opencensus-agent/conf/oca.yaml
+    root      18782      1  0 01:03 pts/0    00:00:00 <span class="token function">grep</span> ocagent
+
+$ <span class="token function">service</span> opencensusagent stop
+    <span class="token punctuation">[</span> ok <span class="token punctuation">]</span> Stopping opencensusagent:.
+
+</pre><ol start="10">
+<li>Uninstall the deb</li>
+</ol>
+<pre data-role="codeBlock" data-info="bash" class="language-bash">$ dpkg -r opencensusagent
+$ dpkg -P opencensusagent
+</pre><h2 class="mume-header" id="create-apt-repository">Create APT Repository</h2>
+
+<p>Ok now that we&apos;ve verified the the <code>.deb</code>, lets package this in to an apt-repo</p>
+<p>Back on your local vm</p>
+<ol start="11">
+<li>Create a &apos;docroot&apos; of the repo and copy the opencensus <code>.deb</code> files over</li>
+</ol>
+<pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token function">mkdir</span> repo <span class="token operator">&amp;&amp;</span> <span class="token function">cd</span> repo/
+<span class="token function">cp</span> <span class="token punctuation">..</span>/opencensusagent_0.1.2-1_all.deb <span class="token keyword">.</span>
+</pre><ol start="12">
+<li>Create a default <code>conf/distribution</code> file under repo</li>
+</ol>
+<p><code>conf/distributions</code>  has the following content:</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>Origin: OpenCensus (https://opencensus.io/)
+Label: OpenCensus
+Codename: stretch
+Architectures: amd64
+Components: main
+Description: OpenCensus Package Repo
+SignWith: 0838A470
+Pull: stretch
+
+Origin: OpenCensus (https://opencensus.io/)
+Label: OpenCensus
+Codename: trusty
+Architectures: amd64
+Components: main
+Description: OpenCensus Package Repo
+SignWith: 0838A470
+Pull: trusty
+</code></pre><ol start="13">
+<li>Generate the archive</li>
+</ol>
+<pre data-role="codeBlock" data-info="" class="language-"><code>$ reprepro  -Vb . includedeb stretch opencensusagent_0.1.2-1_all.deb
+
+  opencensusagent_0.1.2_all.deb: component guessed as &apos;main&apos;
+  Created directory &quot;./pool&quot;
+  Created directory &quot;./pool/main&quot;
+  Created directory &quot;./pool/main/o&quot;
+  Created directory &quot;./pool/main/o/opencensusagent&quot;
+  Exporting indices...
+  Created directory &quot;./dists&quot;
+  Created directory &quot;./dists/stretch&quot;
+  Created directory &quot;./dists/stretch/main&quot;
+  Created directory &quot;./dists/stretch/main/binary-amd64&quot;
+  Successfully created &apos;./dists/stretch/Release.gpg.new&apos;
+  Successfully created &apos;./dists/stretch/InRelease.new&apos;
+</code></pre><blockquote>
+<blockquote>
+<p>Actually, thats it; you&apos;ve got the repo now all setup.  We just need to setup a webserver-distribution</p>
+</blockquote>
+</blockquote>
+<p>Final step is remove the deb and prepare the archive so we can tranmit it to the apt repo we will just setup next</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>rm opencensusagent_0.1.2-1_all.deb
+cd ../
+tar cvf repo.tar
+</code></pre><ol start="13">
+<li>Setup Webserver distribution point</li>
+</ol>
+<p>Now lets prepare the VM that will host the repo with a serving certificate (since we want to use https!)</p>
+<ul>
+<li>Create ssl cert for the <code>https</code> distribution</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-"><code>openssl req  -nodes -new -x509  -keyout server.key -out server.cert
+</code></pre><p>(since this is testing; add any CN= value you want)</p>
+<ol start="14">
+<li>Create VM to host the repo</li>
+</ol>
+<pre data-role="codeBlock" data-info="" class="language-"><code>gcloud compute instances create repo --zone=us-central1-a
+NAME  ZONE           MACHINE_TYPE   PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP     STATUS
+repo  us-central1-a  n1-standard-1               10.128.0.48  35.202.237.155  RUNNING
+</code></pre><blockquote>
+<blockquote>
+<p>Note the internalIP <code>10.128.0.48</code></p>
+</blockquote>
+</blockquote>
+<ol start="15">
+<li>Copy the archive and certificate</li>
+</ol>
+<pre data-role="codeBlock" data-info="" class="language-"><code>gcloud compute scp repo.tar repo:/tmp/ --zone=us-central1-a
+gcloud compute scp server* repo:/tmp/ --zone=us-central1-a
+gcloud compute scp stage/certs/oc_public.key repo:/tmp/  --zone=us-central1-a
+</code></pre><ol start="16">
+<li>Configue nginx to service https</li>
+</ol>
+<pre data-role="codeBlock" data-info="" class="language-"><code>gcloud compute ssh repo
+sudo su -
+apt-get update 
+apt-get install nginx -y
+</code></pre><ul>
+<li>Copy certs over:</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-"><code>cp /tmp/server.key /etc/nginx/
+cp /tmp/server.cert /etc/nginx/
+</code></pre><ul>
+<li>configure nginx</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-"><code>vi /etc/nginx/sites-enabled/default
+</code></pre><pre data-role="codeBlock" data-info="" class="language-"><code>server {
+    listen              443 ssl;
+    listen              [::]:443 ssl;
+    server_name         example2.com www.example2.com;
+    root                /var/www/html;
+
+    ssl_certificate     /etc/nginx/server.cert;
+    ssl_certificate_key /etc/nginx/server.key;
+    }
+</code></pre><ul>
+<li>copy public key and certificate to the docroot</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-"><code>cd /var/www/html
+cp /tmp/oc_public.key .
+cp /tmp/repo.tar .
+tar xvf repo.tar 
+
+service nginx restart
+</code></pre><h3 class="mume-header" id="end-to-end-test">End-to-End Test</h3>
+
+<p>Now to test the repo from a new client!</p>
+<p>in a new shell, create the &apos;client&apos;.  We want the</p>
+<ul>
+<li>setup some background libraries;tools</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-"><code>apt-get update
+apt-get install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common vim
+</code></pre><ul>
+<li>Download and allow apt to trust our public key</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-"><code>  curl -fsSLk https://10.128.0.48/oc_public.key | apt-key add -
+  OK
+</code></pre><p>Check the cert fingerprint matches</p>
+<pre data-role="codeBlock" data-info="" class="language-"><code>apt-key fingerprint 141D7911
+  pub   rsa4096 2019-03-01 [SC]
+        9A70 3639 96C3 EE27 9ABB  AF2E 0C74 009E 141D 7911
+  uid           [ unknown] OpenCensus (https://opencensus.io) &lt;census-developers@googlegroups.com&gt;
+</code></pre><ul>
+<li>Install the repo</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-"><code>add-apt-repository &quot;deb http://10.128.0.48/repo $(lsb_release -cs) main&quot;
+apt-get update
+</code></pre><ul>
+<li>Install the package!</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-"><code>apt-get install opencensusagent
+</code></pre><ul>
+<li>Verify</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-"><code>service opencensusagent start
+
+service opencensusagent status
+&#x25CF; opencensusagent.service - Opencensus Agent
+   Loaded: loaded (/lib/systemd/system/opencensusagent.service; enabled; vendor preset: enabled)
+   Active: active (running) since Wed 2019-03-06 01:52:52 UTC; 33s ago
+ Main PID: 27922 (ocagent)
+    Tasks: 8 (limit: 4915)
+   CGroup: /system.slice/opencensusagent.service
+           &#x2514;&#x2500;27922 /opt/opencensus-agent/bin/ocagent -c /opt/opencensus-agent/conf/oca.yaml
+
+Mar 06 01:52:52 oc-client1 systemd[1]: Started Opencensus Agent.
+Mar 06 01:52:53 oc-client1 opencensusagent[27922]: 2019/03/06 01:52:53 Running OpenCensus Trace and Metrics receivers as a gRPC service at &quot;localhost:55678&quot;
+Mar 06 01:52:53 oc-client1 opencensusagent[27922]: 2019/03/06 01:52:53 Running zPages at &quot;:55679&quot;
+</code></pre><blockquote>
+<blockquote>
+<p>note, if you want to run the agent via commandline<br>
+<code>sudo -H -u ocagent bash -c &apos;/opt/opencensus-agent/bin/ocagent -c /opt/opencensus-agent/conf/oca.yaml&apos;</code></p>
+</blockquote>
+</blockquote>
+<ul>
+<li>Uninstall</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-"><code>apt-get remove opencensusagent
+apt-get purge opencensusagent
+</code></pre><h2>Done</h2>
+<p>Ok, so i just did something that completely nothing now...just wrote this up since i did this from scratch; hopefully somone finds some of these step sueful</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

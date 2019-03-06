@@ -1,0 +1,3 @@
+receivers:
+  opencensus:
+    address: "localhost:55678"

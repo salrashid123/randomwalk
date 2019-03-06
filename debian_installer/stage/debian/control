@@ -1,0 +1,13 @@
+Source: opencensusagent
+Section: base
+Priority: optional
+Maintainer: Opencensus <census-developers@googlegroups.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: https://opencensus.io/agent/
+
+Package: opencensusagent
+Architecture: all
+Depends: ${misc:Depends}
+Description: The OpenCensus Agent is a daemon that allows polyglot
+  deployments of OpenCensus to use centralized exporter implementations.

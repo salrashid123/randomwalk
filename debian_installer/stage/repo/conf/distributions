@@ -1,0 +1,18 @@
+Origin: OpenCensus (https://opencensus.io/)
+Label: OpenCensus
+Codename: stretch
+Architectures: amd64
+Components: main
+Description: OpenCensus Package Repo
+SignWith: 141D7911
+Pull: stretch
+
+Origin: OpenCensus (https://opencensus.io/)
+Label: OpenCensus
+Codename: trusty
+Architectures: amd64
+Components: main
+Description: OpenCensus Package Repo
+SignWith: 141D7911 
+Pull: trusty
+
